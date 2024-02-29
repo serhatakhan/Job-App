@@ -1,22 +1,13 @@
 {
   "jobs": [
     {
-      "id": "4",
-      "position": "React Native Developer",
-      "company": "S.A Inc.",
-      "location": "Bursa",
-      "status": "Devam Ediyor",
-      "type": "Tam Zamanlı",
-      "date": "3/10/2024"
-    },
-    {
       "id": "5",
       "position": "Product Manager",
       "company": "Amazon",
       "location": "Seattle",
       "status": "Mülakat",
       "type": "Yarı Zamanlı",
-      "date": "3/10/2024"
+      "date": "03.10.2024"
     },
     {
       "id": "6",
@@ -25,7 +16,7 @@
       "location": "Redmond",
       "status": "Devam Ediyor",
       "type": "Tam Zamanlı",
-      "date": "3/1/2024"
+      "date": "03.01.2024"
     },
     {
       "id": "7",
@@ -34,7 +25,7 @@
       "location": "İzmir/Bayraklı",
       "status": "Devam Ediyor",
       "type": "Tam Zamanlı",
-      "date": "1/17/2021"
+      "date": "17.01.2021"
     },
     {
       "id": "8",
@@ -43,7 +34,7 @@
       "location": "İstanbul/Levent",
       "status": "Mülakat",
       "type": "Tam Zamanlı",
-      "date": "9/12/2020"
+      "date": "09.12.2020"
     },
     {
       "id": "9",
@@ -52,7 +43,43 @@
       "location": "Ankara/Çankaya",
       "status": "Mülakat",
       "type": "Yarı Zamanlı",
-      "date": "9/12/2020"
+      "date": "09.12.2020"
+    },
+    {
+      "id": "dc4bf878-8a7b-4892-8268-c47440dc3c1e",
+      "position": "React",
+      "company": "Yılport",
+      "location": "Bursa",
+      "status": "Mülakat",
+      "type": "Tam Zamanlı",
+      "date": "29.02.2024"
+    },
+    {
+      "id": "be6b3697-c674-4442-ae17-de0cc613a875",
+      "position": "Native Developer",
+      "company": "Yılport Inc",
+      "location": "Gemlik",
+      "status": "Devam Ediyor",
+      "type": "Yarı Zamanlı",
+      "date": "29.02.2024"
+    },
+    {
+      "id": "7a66ced2-6e01-4a0a-a198-208e749390be",
+      "position": "Frontend Developer",
+      "company": "Amazon",
+      "location": "Seattle",
+      "status": "Devam Ediyor",
+      "type": "Yarı Zamanlı",
+      "date": "29.02.2024"
+    },
+    {
+      "id": "c27af356-a97d-437e-9ad0-324bd34c4370",
+      "position": "Product Manager",
+      "company": "Amazon",
+      "location": "Redmond",
+      "status": "Reddedildi",
+      "type": "Uzaktan",
+      "date": "29.02.2024"
     }
   ]
 }
