@@ -34,4 +34,5 @@ Kullanılan aksiyonlar, Redux Toolkit'in createSlice fonksiyonu ile oluşturulan
 
 ## Ekran Gifi
 
+![kayt1-ezgif com-video-to-gif-converter](https://github.com/serhatakhan/Job-App/assets/147662915/14a576af-c073-4307-8914-6a6b2c34314a)
 
