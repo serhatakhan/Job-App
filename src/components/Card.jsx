@@ -67,7 +67,8 @@ const Card = ({ job }) => {
         </div>
         <div className="field">
           <BsCalendar2DateFill />
-          <p>{job.date}</p>
+          <p>{new Date(job.date).toLocaleDateString("tr")}</p>
+          {/* ingilizce formatta gelen tarih verisini "tr" formatına çevirerek kullanıcıya gösterdik. */}
         </div>
         <div className="status">
           <p style={{ background: colors[job.status] }}>{job.status}</p>

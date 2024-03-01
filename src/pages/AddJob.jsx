@@ -23,7 +23,7 @@ const AddJob = () => {
     const newJobData = Object.fromEntries(formData.entries());
 
     // tarih ve id ekle (bir nesneye yeni bir değer eklemek istiyorsak ...spread veya bu şekilde nesnenin adını yazıp eklemek istediğimiz değeri yazarak (.date gibi) şeklinde yaparız.)
-    newJobData.date = new Date().toLocaleDateString("tr");
+    newJobData.date = new Date().toLocaleDateString("en");
     newJobData.id = v4();
 
     //api'ye veriyi ekle

@@ -1,9 +1,35 @@
 import { useDispatch } from "react-redux";
 import { filterBySearch, sortJobs } from "../redux/slices/jobSlice";
 import { sortOptions, statusOptions, typeOptions } from "./../constants/index";
+import { useDebounce } from "@uidotdev/usehooks";
+import { useEffect, useState } from "react";
 
 const Filter = () => {
+  const [text, setText] = useState("")
+
   const dispatch = useDispatch();
+
+  // 2.yol
+  const debouncedText = useDebounce(text, 500)
+
+  // * Debounce,
+  // Her tuş vuruşunda filtreleme yapmak, düşük donanmlı cihazlarda kasmalara
+  // ve donmalara sebep olabileceğinden, filtreleme işlemini 'kullanıcı yazmayı 
+  // bıraktığı anda' yapmamız lazım. Bu işleme debounce denir.
+  // Yani, Ardışık olarak gerçekleşen fonksiyon çağırma işlemlerinde, fonksiyonun
+  // kısa bir zaman aralığında çağırıldığını görmezden gelir.
+  // 1.yol
+  useEffect(()=>{
+    // bir sayaç başlat ve işlemi sayaç durduğunda yap
+    const timer = setTimeout(() => {
+      dispatch(filterBySearch({text, name: "company"}))
+    }, 500);
+
+    // eğer süre bitmeden tekrar useEffect çalışırsa önceki sayacın çalışmasını durdur
+    return ()=>{
+      clearTimeout(timer)
+    }
+  }, [text])
 
   return (
     <section className="filter-sec">
@@ -13,14 +39,7 @@ const Filter = () => {
         <div>
           <label>Şirket ismine göre ara</label>
           {/* aksiyonun payloadı olarak "name" ve "text" yolldadık, bunun yapmamızın biza artısı bu aksiyonu diğer durumlarda(durum ve tür'de) da kullanabileceğiz. jobSlice'da o yüzden text ve i'den sonra [action.payload.name] ekledik. */}
-          <input
-            onChange={(e) => {
-              dispatch(
-                filterBySearch({ name: "company", text: e.target.value })
-              );
-            }}
-            type="text"
-          />
+          <input onChange={(e) => setText(e.target.value)} type="text" />
         </div>
 
         <div>
