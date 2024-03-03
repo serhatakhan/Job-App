@@ -73,6 +73,11 @@ const jobSlice = createSlice({
           break;
       }
     },
+    // filtreleri temizle butonuna basınca ekrandaki filtrelenmiş ilanları temizleye
+    clearFilters: (state, action)=>{
+      // state.jobs(filrelenen dizi), değişmeyen dizideki(mainJobs) verileri oraya aktardık
+      state.jobs = state.mainJobs
+    }
   },
 });
 
@@ -85,6 +90,7 @@ export const {
   createJob,
   filterBySearch,
   sortJobs,
+  clearFilters
 } = jobSlice.actions;
 
 // reducer'ı export et

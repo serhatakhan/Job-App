@@ -64,15 +64,6 @@
       "date": "02.20.2024"
     },
     {
-      "id": "7a66ced2-6e01-4a0a-a198-208e749390be",
-      "position": "Frontend Developer",
-      "company": "Amazon",
-      "location": "Seattle",
-      "status": "Devam Ediyor",
-      "type": "Yarı Zamanlı",
-      "date": "03.01.2024"
-    },
-    {
       "id": "c27af356-a97d-437e-9ad0-324bd34c4370",
       "position": "Product Manager",
       "company": "Amazon",
@@ -88,6 +79,15 @@
       "location": "Stockholm",
       "status": "Devam Ediyor",
       "type": "Uzaktan",
+      "date": "3/1/2024"
+    },
+    {
+      "id": "5635de66-f1bf-4937-961a-2dbb97297acf",
+      "position": "Frontend Developer",
+      "company": "Microsoft",
+      "location": "Redmond",
+      "status": "Mülakat",
+      "type": "Yarı Zamanlı",
       "date": "3/1/2024"
     }
   ]

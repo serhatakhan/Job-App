@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { filterBySearch, sortJobs } from "../redux/slices/jobSlice";
+import { clearFilters, filterBySearch, sortJobs } from "../redux/slices/jobSlice";
 import { sortOptions, statusOptions, typeOptions } from "./../constants/index";
 import { useDebounce } from "@uidotdev/usehooks";
 import { useEffect, useState } from "react";
@@ -80,7 +80,7 @@ const Filter = () => {
 
         {/* formu sıfırlamasını istediğimiz butonların type'ını reset yapıyoruz type="reset !" */}
         <div>
-          <button type="reset" id="special-button">
+          <button onClick={()=> dispatch(clearFilters())} type="reset" id="special-button">
             <span className="circle1"></span>
             <span className="circle2"></span>
             <span className="circle3"></span>
